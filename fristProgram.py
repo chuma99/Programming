@@ -2,4 +2,5 @@
 # python3 vs python
 
 print("Hello, world!")
-username = input("What's your name?")
+username = input("What's your name?\n")
+print("Hello, " +username+ "!")
