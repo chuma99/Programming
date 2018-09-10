@@ -3,6 +3,8 @@ import sys
 if len(sys.argv) == 2:
 	print("Greetings, " + sys.argv[1] + "!")
 elif len(sys.argv) == 3:
- 	print("Greetings, " + sys.argv[1] + "and " + sys.argv[2] + "!")
+ 	print("Greetings, " + sys.argv[1] + " and " + sys.argv[2] + "!")
 elif len(sys.argv) == 4:
  	print("Greetings, " + sys.argv[1]+ ", " +sys.argv[2]+ ", and " + sys.argv[3] + "!")
+
+ 	
