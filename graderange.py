@@ -2,7 +2,7 @@ import sys
 
 a = float(sys.argv[1])
 
-if a.lstrip('-').replace('.','',1).isdigit():
+if a.replace('.','',1).isdigit():
 	if 5>=a>=0:
 		if 1.0>a>=0:
 			print("F")
