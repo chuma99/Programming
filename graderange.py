@@ -1,6 +1,6 @@
 import sys
 
-a = sys.argv[1]
+a = float(sys.argv[1])
 
 if a.lstrip('-').replace('.','',1).isdigit():
 	if 5>=a>=0:
