@@ -1,5 +1,5 @@
 def greetings(name):
 	#code for function
-	print("Hello", name +"!")
+	print("Hello", name,"!")
 
-greetings(str)
+greetings("Ted")
