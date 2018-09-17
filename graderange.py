@@ -31,6 +31,6 @@ if a.lstrip('-').replace('.','',1).isdigit():
 		elif 5.0>=a>=4.85:
 			print("A+")
 	else:
-	print("Expecting a number between 0 and 5")
+		print("Expecting a number between 0 and 5")
 else:
 	print("Expecting a number between 0 and 5")
