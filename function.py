@@ -1,5 +1,5 @@
-def xfunction():
+def greetings(name):
 	#code for function
-	print("Hello!")
+	print("Hello!", name)
 
-greetings()
+greetings(str)
