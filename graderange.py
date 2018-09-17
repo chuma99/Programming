@@ -1,8 +1,9 @@
 import sys
 
-a = float(sys.argv[1])
+a = sys.argv[1]
 
-if a.replace('.','',1).isdigit():
+if a.lstrip('-').replace('.','',1).isdigit():
+	a = float(sys.argv[1])
 	if 5>=a>=0:
 		if 1.0>a>=0:
 			print("F")
