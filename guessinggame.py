@@ -2,9 +2,10 @@ import random as m
 
 def start():
 	num = int(m.random() * 100)
+	print(num)
 	guess(num)
 
-def guess(int):
+def guess(number):
 		response = int(input("Guess an integer from 0 to 99:"))
 		if response == num:
 			print("Correct! You win!\n")
