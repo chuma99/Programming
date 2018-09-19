@@ -2,6 +2,7 @@ import random as m
 
 def start():
 	num = int(m.random() * 100)
+	print(num)
 	guess()
 
 def guess():
