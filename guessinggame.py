@@ -15,7 +15,7 @@ def guess(num):
 			guess()
 
 def restart():
-			answer = lower(input("Would you like to play again? Y/N \n"))
+			answer = answer.lower(input("Would you like to play again? Y/N \n"))
 			if answer == "y":
 				start()
 			elif answer == "n":
