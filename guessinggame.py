@@ -2,8 +2,7 @@ import random as m
 
 def start():
 	num = int(m.random() * 100)
-	print(num)
-	guess()
+	guess(num)
 
 def guess():
 		response = int(input("Guess an integer from 0 to 99:"))
