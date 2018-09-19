@@ -1,7 +1,5 @@
 import math as m
 
-start()
-
 def start():
 	num = int(m.rand() * 100)
 	guess()
@@ -24,3 +22,5 @@ def restart():
 			else:
 				print("Incorrect input. Try again")
 				restart()
+
+start()
