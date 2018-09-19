@@ -1,4 +1,4 @@
-import math as m
+import random as m
 
 def start():
 	num = int(m.random() * 100)
