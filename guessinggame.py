@@ -1,7 +1,7 @@
 import math as m
 
 def start():
-	num = int(m.rand() * 100)
+	num = int(m.random() * 100)
 	guess()
 
 def guess():
