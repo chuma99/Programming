@@ -8,11 +8,11 @@ def start():
 def guess(num):
 		response = int(input("Guess an integer from 0 to 99:"))
 		if response == num:
-			print("Correct! You win!\n")
+			print("Correct! You win!")
 			restart()
 		else:
 			answer = input("Incorrect. Guess again!")
-			guess()
+			guess(num)
 
 def restart():
 			answer = input("Would you like to play again? Y/N \n")
