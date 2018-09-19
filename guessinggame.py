@@ -4,7 +4,7 @@ def start():
 	num = int(m.random() * 100)
 	guess(num)
 
-def guess():
+def guess(int):
 		response = int(input("Guess an integer from 0 to 99:"))
 		if response == num:
 			print("Correct! You win!\n")
