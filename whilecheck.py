@@ -1,13 +1,14 @@
 while True:
-	num = int(input("Pick a number between 1 and 5: "))
-	integer()
-	between()
-	print("Good Job")	
+	try:
+		num = int(input("Pick a number between 1 and 5: "))
+		between()
+		break
 
-def integer():
-	while type(num) != int:
-		num = int(input("That's not right. Pick an integer between 1 and 5: "))	
+	except ValueError:
+		print("That's not right. Pick an integer between 1 and 5 with your number keys.")
 
 def between():
-	while num>5 and num<1:
-		print("That's not right. Pick a number BETWEEN 1 and 5: ")
+	if num>5 and num<1:
+		num = int(input("That's not right. Pick a number BETWEEN 1 and 5: "))
+	else:
+		print("Good Job")
