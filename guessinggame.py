@@ -5,7 +5,7 @@ def start():
 	print(num)
 	guess(num)
 
-def guess(number):
+def guess(num):
 		response = int(input("Guess an integer from 0 to 99:"))
 		if response == num:
 			print("Correct! You win!\n")
