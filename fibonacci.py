@@ -9,4 +9,6 @@ def fibonacci():
 		b=c
 		x=2
 		if c!=21:
-		fibonacci()
+			fibonacci()
+
+fibonacci()
