@@ -1,4 +1,5 @@
 def fibonacci():
+	c=0
 	while c<=21:
 		a=0
 		b=1
