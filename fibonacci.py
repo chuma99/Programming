@@ -1,14 +1,11 @@
 def fibonacci():
-	x=1 
-	a=0
-	b=1
-	c=a+b
-	while x==1:
+	while c<=21:
+		a=0
+		b=1
+		c=a+b
 		print(c)
 		a=b
 		b=c
-		x=2
-		if c!=21:
-			fibonacci()
+			
 
 fibonacci()
