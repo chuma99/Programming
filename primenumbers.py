@@ -35,7 +35,7 @@ print(randoms)
 #Create  a  list  of  100  randomly  generated  3-digit  numbers.
 numbers = []
 first = []
-for i in range(100):
+for i in range(10):
 	numbers.append(random.randrange(100,1000,1))
 #Find  a  way  to  extract  only  the  first  digit  from  each  number,
 for i in numbers:
