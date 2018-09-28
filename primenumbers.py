@@ -37,8 +37,10 @@ numbers = []
 first = []
 for i in range(10):
 	numbers.append(random.randrange(100,1000,1))
+print(numbers)
 #Find  a  way  to  extract  only  the  first  digit  from  each  number,
 for i in numbers:
 	first[i] = int(str(numbers[i])[:1])
 #and  then  arrange  the  resulting  list  in  ascending  order
 first.sort()
+print(first)
