@@ -7,18 +7,17 @@ print(randoms)
 
 
 
-#generate a list of prime numbers from one through ten
+#generate a list of prime numbers from 1 through 100
 #should print 1,2,3,5,7
 
-#a = [1,2,3,4,5,6,7,8,9,10]
-#for i in range :
-#	one = a[i]
-#	if a[i]/2 isinstance(one, int)
-#		a.remove(a[i])
-#	elif a[i]/3 isinstance(one, int)
-#		a.remove(a[i])
-#	elif a[i]/5 isinstance(one, int)
-#		a.remove(a[i])
-#	elif a[i]/7 isinstance(one, int)
-#		a.remove(a[i])
-#print(a)
+for i in range (10):
+	one = randoms[i]
+	if randoms[i]/2 isinstance(one, int)
+		randoms.remove(randoms[i])
+	elif a[i]/3 isinstance(one, int)
+		randoms.remove(randoms[i])
+	elif a[i]/5 isinstance(one, int)
+		randoms.remove(randoms[i])
+	elif a[i]/7 isinstance(one, int)
+		randoms.remove(randoms[i])
+print(randoms)
