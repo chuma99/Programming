@@ -8,11 +8,10 @@ print(randoms)
 randoms.sort()
 print(randoms)
 
-for i in range(10):
-	
-	three = randoms[i]/3
-	if isinstance(three, int):
-		del randoms(i)
+for i in randoms:
+	if i % 3 == 0:
+		randoms.remove(i)
+print(randoms)
 
 
 
