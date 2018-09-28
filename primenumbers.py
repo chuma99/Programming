@@ -8,6 +8,9 @@ print(randoms)
 randoms.sort()
 print(randoms)
 
+for i in range():
+	randoms.remove(i)
+
 
 
 #generate a list of prime numbers from 1 through 100
@@ -20,11 +23,11 @@ for i in range (10):
 	seven = randoms[i]/7
 
 	if isinstance(two, int):
-		randoms.remove(randoms[i])
+		randoms.remove(i)
 	elif isinstance(three, int):
-		randoms.remove(randoms[i])
+		randoms.remove(i)
 	elif isinstance(five, int):
-		randoms.remove(randoms[i])
+		randoms.remove(i)
 	elif isinstance(seven, int):
-		randoms.remove(randoms[i])
+		randoms.remove(i)
 print(randoms)
