@@ -15,12 +15,12 @@ for i in range (10):
 	three = randoms[i]/3
 	five = randoms[i]/5
 	seven = randoms[i]/7
-	if isinstance(two, int)
+	if isinstance(two, int):
 		randoms.remove(randoms[i])
-	elif isinstance(three, int)
+	elif isinstance(three, int):
 		randoms.remove(randoms[i])
-	elif isinstance(five, int)
+	elif isinstance(five, int):
 		randoms.remove(randoms[i])
-	elif isinstance(seven, int)
+	elif isinstance(seven, int):
 		randoms.remove(randoms[i])
 print(randoms)
