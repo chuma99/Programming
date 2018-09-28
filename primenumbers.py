@@ -31,6 +31,17 @@ for i in randoms:
 		randoms.remove(i)
 print(randoms)
 
+#Generate  a  random  list  with  its  items  being  integer  from  1  to  30
+#the  list  should  be  30  items  long.
+randoms=[]
+for i in range (30):
+    randoms.append(random.randrange(1,31,1))
+print(randoms)
+#then  print  only  those  values  whose  digit  sum  equals  5.
+for i in randoms:
+	if !int(str(numbers[i])[:1]) + int(str(numbers[i])[1:2]) == 5:
+		randoms.remove(i)
+print(randoms)
 
 #Create  a  list  of  100  randomly  generated  3-digit  numbers.
 numbers = []
