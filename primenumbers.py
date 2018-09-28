@@ -12,7 +12,7 @@ for i in range(10):
 	
 	three = randoms[i]/3
 	if isinstance(three, int):
-	randoms.remove(i)
+		randoms.remove(i)
 
 
 
