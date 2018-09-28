@@ -11,13 +11,16 @@ print(randoms)
 #should print 1,2,3,5,7
 
 for i in range (10):
-	one = randoms[i]
-	if randoms[i]/2 isinstance(one, int)
+	two = randoms[i]/2
+	three = randoms[i]/3
+	five = randoms[i]/5
+	seven = randoms[i]/7
+	if isinstance(two, int)
 		randoms.remove(randoms[i])
-	elif a[i]/3 isinstance(one, int)
+	elif isinstance(three, int)
 		randoms.remove(randoms[i])
-	elif a[i]/5 isinstance(one, int)
+	elif isinstance(five, int)
 		randoms.remove(randoms[i])
-	elif a[i]/7 isinstance(one, int)
+	elif isinstance(seven, int)
 		randoms.remove(randoms[i])
 print(randoms)
