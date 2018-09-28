@@ -21,10 +21,10 @@ print(randoms)
 for i in randoms:
 	if i % 2 == 0:
 		randoms.remove(i)
-	elif if i % 3 == 0:
+	elif i % 3 == 0:
 		randoms.remove(i)
-	elif if i % 5 == 0:
+	elif i % 5 == 0:
 		randoms.remove(i)
-	elif if i % 7 == 0:
+	elif i % 7 == 0:
 		randoms.remove(i)
 print(randoms)
