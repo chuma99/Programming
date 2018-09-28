@@ -18,18 +18,13 @@ print(randoms)
 #generate a list of prime numbers from 1 through 100
 #should print 1,2,3,5,7
 
-for i in range (10):
-	two = randoms[i]/2
-	three = randoms[i]/3
-	five = randoms[i]/5
-	seven = randoms[i]/7
-
-	if isinstance(two, int):
+for i in randoms:
+	if i % 2 == 0:
 		randoms.remove(i)
-	elif isinstance(three, int):
+	elif if i % 3 == 0:
 		randoms.remove(i)
-	elif isinstance(five, int):
+	elif if i % 5 == 0:
 		randoms.remove(i)
-	elif isinstance(seven, int):
+	elif if i % 7 == 0:
 		randoms.remove(i)
 print(randoms)
