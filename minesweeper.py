@@ -3,7 +3,7 @@ import random
 def createBoard (rows, cols, mines):
     board = []
     for r in range (0,rows+1):
-        board.append([])
+        #board.append([])
         for c in range (0,cols+1):
            board[r].append("1 ")
 
