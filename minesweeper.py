@@ -5,7 +5,7 @@ def createBoard (rows, cols, mines):
     for r in range (0,rows+1):
         board.append([])
         for c in range (0,cols+1):
-           board[r].append("1 ")
+           board[r].append("0 ")
 
     num_mines=0
 
@@ -13,7 +13,7 @@ def createBoard (rows, cols, mines):
         x = random.choice(board)
         y = random.choice(x)
         ypos = x.index(y)
-        if y == "1 ":
+        if y == "0 ":
             x[ypos]= "B*"
 
         num_mines = num_mines+1
