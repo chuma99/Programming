@@ -15,7 +15,7 @@ def createBoard (rows, cols, mines):
 
         num_mines = num_mines+1
 
-createBoard()
+createBoard(3, 3, 2)
 
 #set the range to the number of rows and columns provided +1
     #for every row, create a row and a column
