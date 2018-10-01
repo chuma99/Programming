@@ -1,19 +1,17 @@
 def createBoard (rows, cols, mines):
+    board = []
+    for r in range (0,rows+1):
+        board.append([])
+        for c in range (0,cols+1):
+           board[r].append("C ")
 
-board = []
-for r in range (0,rows+1):
-    board.append([])
-    for c in range (0,cols+1):
-        board[r].append("C ")
+    num_mines=0
 
-num_mines=0
-
-while num_mines < mines :
-    x = random.choice(board)
-    y = random.choice(x)
-    if y == "C ":
-        x[y]= "C*"
-
+    while num_mines < mines :
+        x = random.choice(board)
+        y = random.choice(x)
+        if y == "C ":
+            x[y]= "C*"
 
         num_mines = num_mines+1
 
