@@ -11,7 +11,7 @@ def createBoard (rows, cols, mines):
 
     while num_mines < mines :
         x = random.choice(board)
-        y = random.choice(x)
+        y = int(random.choice(x))
         if y == "C ":
             x[y]= "C*"
 
