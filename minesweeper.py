@@ -1,3 +1,5 @@
+import random
+
 def createBoard (rows, cols, mines):
     board = []
     for r in range (0,rows+1):
