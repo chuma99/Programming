@@ -46,11 +46,13 @@ def createBoard (rows, cols, mines):
     while True:
         xpos = int(input("Input the x coordinate of a bombless position (1-"+str(rows)+"): "))
         ypos = int(input("Input the y coordinate of a bombless position (1-"+str(cols)+"): "))
-        if board[ypos][xpos] == "B":
+        if board[ypos][xpos] == "B": #lose game
             for i in board:
                 print(*i)
             print("You've clicked on a bomb. Game over.")
             break
+        elif board[ypos][xpos] == "W": #win game
+            print("You've won the game. Congratulations")
         else:
             #reveal solution[ypos][xpos]
             solution[ypos][xpos] = str(board[ypos][xpos])
@@ -93,7 +95,7 @@ def createBoard (rows, cols, mines):
                     solution[ypos+1][xpos-1] = str(board[ypos+1][xpos-1]) 
                 solution[ypos-1][xpos-1] = str(board[ypos-1][xpos-1])
                 if board[ypos-1][xpos-1] == 0:
-                    solution[ypos][xpos-1] = str(board[ypos][xpos-1])####here
+                    solution[ypos][xpos-1] = str(board[ypos][xpos-1])
                     solution[ypos][xpos-2] = str(board[ypos][xpos-2])
                     solution[ypos-1][xpos-2] = str(board[ypos-1][xpos-2])
                     solution[ypos-1][xpos] = str(board[ypos-1][xpos])
