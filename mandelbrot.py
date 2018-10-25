@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter
 
-#https://www.atopon.org?mandel/#
+#https://www.atopon.org/mandel/#
 
 xa, xb = -0.232397, -0.205298
 ya, yb = 0.6888428, 0.7159424
@@ -23,12 +23,12 @@ for y in range(imgy):
 				break
 			z = z**2 + c
 
-		r = (i*40)%128#i
-		g = (i*5)%128#int(256-(i%(i+2)%2))
+		r = (i*40)%128#adjusts code color on more than incremental
+		g = (i*5)%128
 		b = (i*50)%256
 
 		image.putpixel((x,y), (r,g,b))
 
-im1 = image.filter(ImageFilter.GaussianBlur(5))
+im1 = image.filter(ImageFilter.GaussianBlur(2))#blurs image to scale of 2
 
 im1.show()
