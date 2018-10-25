@@ -21,8 +21,8 @@ for y in range(imgy):
 				break
 			z = z**2 + c
 
-		r = (i*40)%128#i
-		g = (i*100)%256#int(256-(i%(i+2)%2))
+		r = (i*40)%128#adjusts code color on more than incremental
+		g = (i*100)%256
 		b = (i*50)%256
 
 		image.putpixel((x,y), (r,g,b))
@@ -31,15 +31,14 @@ km = (
      -2, -1,  0,
      -1,  1,  1,
       0,  1,  2
-      )
+      )#creates grid for kernel
 
 im1 = ImageFilter.Kernel(
     size=(3, 3),
     kernel=km,
     scale=sum(km),
     offset=0 
-    )
-#im1 = image.filter(ImageFilter.Kernel((3,3), 3, 1, 0))
+    ) #filters the image and saves the filter as im1
 
 
-image.filter(im1).show()
+image.filter(im1).show() #prints image with filter on top
