@@ -9,7 +9,7 @@ class Element:
 		self.weight = weight
 
 	def __str__(self):
-		return str()
+		return self.name +" "+ str(self.number) +" "+ self.symbol +" "+ str(self.weight)
 
 
 	def getName(self):
@@ -39,7 +39,7 @@ class PeriodicTable:
 		while i < len(self.table):
 			#self.elementList.append(Element("Hydrogen", 1, "H", 1.01))
 			#self.elementList.append(Element("Helium", 2, "He", 1.07))
-			self.elementList.append(Element(self.table[i][0], self.table[i][1], self.table[i][2], self.table[i][3]))
+			self.elementList.append(str(Element(self.table[i][0], self.table[i][1], self.table[i][2], self.table[i][3])))
 			if i == 103:
 				break
 			i+=1
@@ -72,7 +72,8 @@ class PeriodicTable:
 
 pt = PeriodicTable("elements.csv")
 #pt.printTable()
-print(pt.getElementList())
+#print(pt.getElementList())
 for i in pt.getTable():
 	print(*i)
+print(pt.getElementList())
 # periodicTable.append(Element("Hydrogen", 1, "H", 1.01))
