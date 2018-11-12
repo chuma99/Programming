@@ -30,15 +30,17 @@ class PeriodicTable:
 		self.numbers = []
 		self.symbols = []
 		self.weights = []
-		self.table = pd.read_csv(table)
-		i = 1;
+		#datafile = open('elements.csv', 'r')
+		#datareader = csv.reader(datafile, delimiter=';')
+		self.table = list(csv.reader(open('elements.csv', 'r')))
+		#self.table = pd.read_csv(table)
 		self.elementList = []
 		#holdonwhile (i < 103):
 			#self.elementList.append(Element("Hydrogen", 1, "H", 1.01))
 			#self.elementList.append(Element("Helium", 2, "He", 1.07))
 			#holdonself.elementList.append(Element(table[i][0], table[i][1], table[i][2], table[i][3]))
 			#holdoni+=1
-
+		'''
 		for row in self.table:
 			name = row[0]
 			number = row[1]
@@ -48,6 +50,7 @@ class PeriodicTable:
        		self.numbers.append(number)
        		self.symbols.append(symbol)
        		self.weights.append(weight)
+       		'''
 
 	def __str__(self):
 		return str()
