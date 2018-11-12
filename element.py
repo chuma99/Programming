@@ -35,11 +35,16 @@ class PeriodicTable:
 		self.table = list(csv.reader(open('elements.csv', 'r')))
 		#self.table = pd.read_csv(table)
 		self.elementList = []
-		#holdonwhile (i < 103):
+		i = 1
+		while i < len(self.table):
 			#self.elementList.append(Element("Hydrogen", 1, "H", 1.01))
 			#self.elementList.append(Element("Helium", 2, "He", 1.07))
-			#holdonself.elementList.append(Element(table[i][0], table[i][1], table[i][2], table[i][3]))
-			#holdoni+=1
+			self.elementList.append(Element(self.table[i][0], self.table[i][1], self.table[i][2], self.table[i][3]))
+			if i == 103:
+				break
+			i+=1
+			
+			
 		'''
 		for row in self.table:
 			name = row[0]
@@ -68,5 +73,6 @@ class PeriodicTable:
 pt = PeriodicTable("elements.csv")
 #pt.printTable()
 print(pt.getElementList())
-print(pt.getTable())
+for i in pt.getTable():
+	print(*i)
 # periodicTable.append(Element("Hydrogen", 1, "H", 1.01))
