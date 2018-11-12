@@ -28,15 +28,16 @@ class PeriodicTable:
 	def __init__(self, table):
 		self.table = pd.read_csv(table)
 		i = 1;
-		self.elementList = []
+		self.elementList = list(zip(*self.table))
 		#holdonwhile (i < 103):
 			#self.elementList.append(Element("Hydrogen", 1, "H", 1.01))
 			#self.elementList.append(Element("Helium", 12, "He", 1.07))
 			#holdonself.elementList.append(Element(table[i][0], table[i][1], table[i][2], table[i][3]))
 			#holdoni+=1
- 		next(self.table)
-		for list in self.table:
-			self.elementList.append(list[2])
+ 		#next(self.table)
+
+		#.    for line in self.table:
+			#.    self.elementList.append(line)
 
 	def __str__(self):
 		return str()
@@ -46,7 +47,6 @@ class PeriodicTable:
 		return self.elementList
 
 #data = pd.read_csv("elements.csv")
-
 #print(data)
 
 pt = PeriodicTable("elements.csv")
