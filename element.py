@@ -60,6 +60,19 @@ class PeriodicTable:
 	def __str__(self):
 		return str()
 
+	def findElementName(self, weight):
+		for t in self.elementList:
+			if t.getWeight() == weight:
+				return t.getName()
+	def findElementName(self, symbol):
+		for t in self.elementList:
+			if t.getSymbol() == symbol:
+				return t.getName()
+
+	def findElementName(self, number):
+		for t in self.elementList:
+			if t.getNumber() == number:
+				return t.getName()
 
 	def getElementList(self):
 		return self.elementList
@@ -76,4 +89,8 @@ pt = PeriodicTable("elements.csv")
 for i in pt.getTable():
 	print(*i)
 print(pt.getElementList())
+print(pt.findElementName(1.01))
+print(pt.findElementName('H'))
+print(pt.findElementName(1))
+
 # periodicTable.append(Element("Hydrogen", 1, "H", 1.01))
