@@ -1,88 +1,80 @@
-#date, description, sources, honor code.
+#11-13-18
+#In this assignment, I was able to import a csv file of the elements on the periodic table, and import them into my code. From there, 
+#I was able to access the elements of the file and complete tasks using them, all through user input. 
+#Sources: 	https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
+		#	https://introcs.cs.princeton.edu/python/32class/elements.csv
+		#	https://docs.python.org/2/library/csv.html
+		#	https://www.pythonforbeginners.com/csv/using-the-csv-module-in-python
+#On my honor, I have neither given or received unauthorized aid. 
 
-import csv
+import csv #importing libraries that allow us to access csv files
 import pandas as pd
 
 class Element:
-	def __init__(self, name, number, symbol, weight):
+	def __init__(self, name, number, symbol, weight): #constructor
 		self.name = name
 		self.number = number
 		self.symbol = symbol
 		self.weight = weight
 
-	def __str__(self):
+	def __str__(self): #print statement
 		return self.name +" "+ str(self.number) +" "+ self.symbol +" "+ str(self.weight)
 
-	def getName(self):
+	def getName(self): #getter to access name
 		return self.name
 
-	def getNumber(self):
+	def getNumber(self): #getter to access number
 		return self.number
 
-	def getSymbol(self):
+	def getSymbol(self): #getter to access symbol
 		return self.symbol
 
-	def getWeight(self):
+	def getWeight(self): #getter to access weight
 		return self.weight
 
 class PeriodicTable:
-	def __init__(self, table):
+	def __init__(self, table): #constructor
 		self.names = []
 		self.numbers = []
 		self.symbols = []
 		self.weights = []
-		#datafile = open('elements.csv', 'r')
-		#datareader = csv.reader(datafile, delimiter=';')
-		self.table = list(csv.reader(open('elements.csv', 'r')))
-		#self.table = pd.read_csv(table)
+		self.table = list(csv.reader(open('elements.csv', 'r')))#this imports the csv file as table
 		self.elementList = []
 		i = 1
+		#this next part of the code is a loop that goes through elementlist and adds elements based on the dataset
 		while i < len(self.table):
 			self.elementList.append(Element(self.table[i][0], self.table[i][1], self.table[i][2], self.table[i][3]))
 			if i == 103:
 				break
 			i+=1
-			
-			
-		'''
-		for row in self.table:
-			name = row[0]
-			number = row[1]
-			symbol = row[2]
-			weight = row[3]
-			self.names.append(name)
-       		self.numbers.append(number)
-       		self.symbols.append(symbol)
-       		self.weights.append(weight)
-       		'''
 
-	def __str__(self):
+	def __str__(self): #print statement
 		result = ''
 		for i in self.elementList:
 			result += str(i)+'\n'
 		return result
 
-	def findElementNameByWeight(self, weight):
+	def findElementNameByWeight(self, weight): #Enter a weight to find an element
 		for t in self.elementList:
 			if t.getWeight() == str(weight):
 				return t.getName()
 
-	def findElementNameBySymbol(self, symbol):
+	def findElementNameBySymbol(self, symbol): #Enter a symbol to find an element
 		for t in self.elementList:
 			if t.getSymbol() == str(symbol):
 				return t.getName()
 
-	def findElementNameByNumber(self, number):
+	def findElementNameByNumber(self, number): #Enter a number to find an element
 		for t in self.elementList:
 			if t.getNumber() == str(number):
 				return t.getName()
 
-	def displayElement(self, name):
+	def displayElement(self, name): #Enter element name to display element details.
 		for t in self.elementList:
 			if t.getName() == str(name):
 				return t
 
-	def atomicWeightCalculator(self, name1, name2):
+	def atomicWeightCalculator(self, name1, name2): #Enter two element names and add their atomic weights
 		weight = 0
 		for t in self.elementList:
 			if t.getName() == str(name1):
@@ -91,16 +83,17 @@ class PeriodicTable:
 				weight+= float(t.getWeight()) 
 		return weight
 
-	def getElementList(self):
+	def getElementList(self): #Returns the element list
 		return self.elementList
 
-	def getTable(self):
+	def getTable(self):#Returns the csv file
 		return self.table
 #data = pd.read_csv("elements.csv")
 
 #print(data)
 
 pt = PeriodicTable("elements.csv")
+#the following code is the menu that is looped through to complete the tasks mentioned above
 print("Hello user, welcome to the periodic table of elements!")
 print("What would you like to do here?\n")
 x = 1
@@ -143,16 +136,3 @@ while x == 1:
 	else: 
 		print("Your input was invalid. Please try again.")
 
-#pt.printTable()
-#print(pt.getElementList())
-#for i in pt.getTable():
-	#print(*i)
-#print(pt)
-#print(pt.findElementNameByWeight(6.94))
-#print(pt.findElementNameBySymbol('O'))
-#print(pt.findElementNameByNumber(62))
-#print(pt.displayElement('Oxygen'))
-#print(pt.atomicWeightCalculator("Oxygen", "Hydrogen"))
-
-
-# periodicTable.append(Element("Hydrogen", 1, "H", 1.01))
