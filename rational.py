@@ -30,18 +30,18 @@ class RationalNumber:
 
 	# complete this first!
 	def __str__(self):
-		return 1 # fill in code (replace 1)
+		return str # fill in code (replace 1)
 
 	__repr__ = __str__ # what does this do?
 
 def main():
 	a = RationalNumber(1, 2)
 	b = RationalNumber(1, 3)
-	print(str(a)) # 1/2
-	print(str(b)) # 1/3
-	print(str(a+b))# 5/6
-	print(str(a-b)) # 1/6
-	print(str(a*b)) # 1/6
-	print(str(a/b)) # 3/2
+	print(a) # 1/2
+	print(b) # 1/3
+	print(a+b) # 5/6
+	print(a-b) # 1/6
+	print(a*b) # 1/6
+	print(a/b) # 3/2
 
 main()

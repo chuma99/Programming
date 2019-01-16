@@ -21,7 +21,7 @@ for y in range(imgy):
 				break
 			z = z**2 + c
 
-		r = (i*40)%128#adjusts code color on more than incremental
+		r = (i*40)%128 #adjusts code color on more than incremental
 		g = (i*100)%256
 		b = (i*50)%256
 
