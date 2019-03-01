@@ -11,28 +11,29 @@ class MontyHall:
 		self.prizeDoor = self.pickDoor()
 		self.selectedDoor = None
 		self.removedDoor = None
-
+	#This funtion was created in order to start the simulation
 	def pickDoor(self):
 		return random.randint(1,3)
-
+	#This sets the door as what picked in the two simulations
 	def selectDoor(self):
 		self.selectedDoor = self.pickDoor()
-
+	#This step of the simulation takes one of the three doors out of play 
 	def removeDoor(self):
 		d = self.pickDoor()
 		while d == self.selectedDoor or d == self.prizeDoor:
 			d = self.pickDoor()
 		self.removedDoor = d
-
+	#This step happens in the simulation where the user switches doors.
+	#Should theoretically change odds
 	def switchChoice(self):
 		self.selectedDoor = 6-self.selectedDoor-self.removedDoor
-
+	#The simulation should win out regardless
 	def userWins(self):
 		if self.selectedDoor == self.prizeDoor:
 			return True
 		else:
 			return False
-
+	#This starts the simulation and calls the functions created above
 	def runGame(self, switch=True):
 		self.selectDoor()
 		self.removeDoor()
