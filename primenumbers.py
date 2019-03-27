@@ -15,6 +15,8 @@ for i in randoms:
 print(randoms)
 
 
+
+
 #generate a list of random prime numbers from 1 through 100
 randoms=[]
 for i in range (10):
@@ -31,27 +33,33 @@ for i in randoms:
 		randoms.remove(i)
 print(randoms)
 
+
+
+
 #Generate  a  random  list  with  its  items  being  integer  from  1  to  30
 #the  list  should  be  30  items  long.
-randoms=[]
+randoms =[]
 for i in range (30):
     randoms.append(random.randrange(1,31,1))
 print(randoms)
 #then  print  only  those  values  whose  digit  sum  equals  5.
 for i in randoms:
-	if !int(str(numbers[i])[:1]) + int(str(numbers[i])[1:2]) == 5:
+	if int(str(numbers[i])[:1]) + int(str(numbers[i])[1:2]) != 5:
 		randoms.remove(i)
 print(randoms)
 
+
+
+
 #Create  a  list  of  100  randomly  generated  3-digit  numbers.
 numbers = []
-first = []
+first = [x for x in range 5]
 for i in range(10):
 	numbers.append(random.randrange(100,1000,1))
 print(numbers)
 #Find  a  way  to  extract  only  the  first  digit  from  each  number,
 for i in numbers:
-	first[i] = int(str(numbers[i])[:1])
+	first[i] = str(numbers[i])[:1]
 #and  then  arrange  the  resulting  list  in  ascending  order
 first.sort()
 print(first)

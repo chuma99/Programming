@@ -1,3 +1,4 @@
+import random
 a = []
 
 #add 2 to our list
@@ -69,6 +70,8 @@ i = [[0]*10 for x in range(10)]
 print(i)
 
 for x in range(len(i)):
+	if i[][]
 	print(*i[x])
+
 
 

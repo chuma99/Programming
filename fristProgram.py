@@ -2,8 +2,6 @@
 # homework is to write a program that has a conversation with you
 # python3 vs python
 
-print("Hello, world!")
-username = input("What's your name?\n")
 hometown = input("Hello, " +username+ "! Where are you from?\n")
 grade = input("Awesome, what grade are you in?\n")
 returner = input(grade+ " graders are the coolest! Were you a student at Choate last year?\n")

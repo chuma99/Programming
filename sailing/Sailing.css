@@ -1,0 +1,86 @@
+*{
+	margin:0.5;
+}
+
+body{
+    background-color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1em;
+    margin:0;
+}
+
+h1{
+	padding: 60px;
+	color: white;
+	margin: 0;
+	height: 40px;
+	text-align: center;
+}
+
+h2{
+	font-family: Times New Roman;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+p{
+	margin: 25px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: white;
+}
+
+img{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+ul{
+	padding: 0;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+a{
+	color: white;
+    text-align: center;
+    
+    line-height: 20;
+    margin: 10px;
+    border: 10px solid black;
+    padding: 100px;
+    margin: 10px 0;
+
+}
+section{
+	line-height: 1.5;
+}
+
+#boat1{
+	width: 150px;
+	height: 150px;
+	background-image: url("boat1.jpg");
+	background-repeat: no-repeat;
+}
+
+#boat2{
+	width: 150px;
+	height: 150px;
+	background-image: url("boat2.jpg");
+	background-repeat: no-repeat;
+}
+
+#boat3{
+	width: 150px;
+	height: 150px;
+	background-image: url("boat3.jpg");
+	background-repeat: no-repeat;
+}
